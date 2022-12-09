@@ -86,26 +86,28 @@ At time 1666781183:  tracking(test1, 200);
 ```
 
 ## Requirements P0
-Implement the above with appropriate assumptions for the example shown above.
-Optimize your solution for time/space complexity taking reasonable tradeoffs.
-Think of your system as a central tool/library used by multiple teams.
-You can simulate the operations of register,isAllowed and tracking as shown in the example, using a main function or test cases
-You should have a working code that demonstrates the same.
-Handle error scenarios appropriately
-Requirements P1
-Percentile computation of latency and error rate inclusion for making algo generic
-Things to keep in mind
-You are only allowed to use in-memory data structures
-You are NOT allowed to use any databases
-You are NOT required to have a full-fledged web service or APIs exposed
-A working code is ABSOLUTELY NECESSARY. Evaluation will not be done if your code is not running. So ensure you time yourselves accordingly
-You are required to showcase the working of the above concept
-Just a main class that simulates the above operations is enough
-Should you have any doubts, you are allowed to make appropriate assumptions, as long as you can explain them during the evaluation.
-You are allowed to code on your favourite IDEs as long as you paste the code back into the tool within the allotted time frame
-You are NOT allowed to use any in-built library
-How you will be evaluated
-You are expected to write production quality code while implementing the requirements.
+- Implement the above with appropriate assumptions for the example shown above.
+- Optimize your solution for time/space complexity taking reasonable tradeoffs.
+- Think of your system as a central tool/library used by multiple teams.
+- You can simulate the operations of register,isAllowed and tracking as shown in the example, using a main function or test cases
+- You should have a working code that demonstrates the same.
+- Handle error scenarios appropriately
+
+## Requirements P1
+- Percentile computation of latency and error rate inclusion for making algo generic
+
+## Things to keep in mind
+- You are only allowed to use in-memory data structures
+- You are NOT allowed to use any databases
+- You are NOT required to have a full-fledged web service or APIs exposed
+- A working code is ABSOLUTELY NECESSARY. Evaluation will not be done if your code is not running. So ensure you time yourselves accordingly
+- You are required to showcase the working of the above concept
+- Just a main class that simulates the above operations is enough
+- Should you have any doubts, you are allowed to make appropriate assumptions, as long as you can explain them during the evaluation.
+- You are allowed to code on your favourite IDEs as long as you paste the code back into the tool within the allotted time frame
+- You are NOT allowed to use any in-built library
+- How you will be evaluated
+- You are expected to write production quality code while implementing the requirements.
 
 We look for the following:
 
