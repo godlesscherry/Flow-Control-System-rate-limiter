@@ -1,14 +1,14 @@
 # FlowControlSystem-rate-limiter
 Flow control is the process of managing the rate of calls between services. The system is told to track calls between services and at any point the system can be asked, whether an api call is allowed or not .
 
-Problem Statement
+## Problem Statement
 You need to design a system that is able to control the rate of calls between services.
 There are 3 parts to this problem statement. register,trackCall, isAllowed.
 
 When a call is being tracked, you will be provided with a commandName, and response time.
 When isAllowed is called, you will be provided with a commandName for which true or false need to be returned based on below criteria.
 
-Criteria:
+## Criteria:
 If average response time of calls is greater than X ms within T ms then allow only R requests for T1 ms
 If R requests average response time or average response time of total requests accumulated in T1 ms is greater than Y ms then do not allow any request for another T1 ms .
 Else allow 100% request
@@ -45,10 +45,10 @@ Avg response time in T ms crosses threshold limit and avg response time in T1 ms
 T (Fail), T1 (Fail), T1, T …
 Avg response time in T ms crossed threshold limit and avg response time in T1 ms crosses limit so do not allow any request for next T1 ms .
 
-Sample
+### Sample
 The following is just a sample for your understanding.
 Please remember: You are expected to write the system which mirrors production quality code, rather than just implementing these functions
-
+```
 commandName: test
 commandName: test1
 register(test,commandConfig)
@@ -83,9 +83,9 @@ At time 1666781183: isAllowed(test); returns false  // No of request in already 
 At time 1666781183: isAllowed(test); returns false // As avg was 350 for 2 request so do not allow  any request in t1 window 
 At time 1666781183: isAllowed(test1); returns true  // Avg 200
 At time 1666781183:  tracking(test1, 200);
+```
 
-
-Requirements P0
+## Requirements P0
 Implement the above with appropriate assumptions for the example shown above.
 Optimize your solution for time/space complexity taking reasonable tradeoffs.
 Think of your system as a central tool/library used by multiple teams.
@@ -106,6 +106,7 @@ You are allowed to code on your favourite IDEs as long as you paste the code bac
 You are NOT allowed to use any in-built library
 How you will be evaluated
 You are expected to write production quality code while implementing the requirements.
+
 We look for the following:
 
 Separation of concerns
